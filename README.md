@@ -1,1 +1,1 @@
-myirc
+myIrc

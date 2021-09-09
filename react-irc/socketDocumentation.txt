@@ -1,0 +1,96 @@
+socket Server receive:
+
+**"connection" =>auto
+nothing particular
+_________________________
+
+**"join-channel" =>
+ receive data = {
+token: "token",
+channel: "channel name"
+}
+join channel in socket && DB /
+
+send to front :
+
+-"res-join" with  data = API JSON
+
+- "user-join-your-channel" with data = user name
+
+
+________________________________
+
+**"new-message" =>
+receive data={
+token: "token",
+name: "channel name",
+message : "message"
+}
+put message in db
+send data = { message: "message", nickName: "user name"} if success
+else send "error" with data = API error JSON
+
+___________________________________________
+
+**"create-channel"=>
+
+receive data = {name: "channel"}
+
+send to front :
+
+-"res-join" with  data = API JSON
+
+- "success" with data = "string"
+
+OR
+
+-"error" with  data = API JSON
+_________________________________
+
+**"list" =>
+
+receive no data
+
+send 
+'list' with data = [{ name: "channel 1"}, {name: "channel2},  (..)]
+
+____________________________________________________
+
+** "create-channel" =>
+with data = {
+token: "token",
+name:"channel name"}
+
+send 
+"success" with data = "string"
+
+_________________________________________
+
+
+
+** "leave" =>
+
+with data =
+{
+name: "channel name",
+nickName : "user nickname"
+}
+
+send 
+"leave" with data = {error : "string"}
+
+_______________________________________________
+
+** "delete-channel" =>
+with data = {
+token: "token",
+name:"channel name"}
+
+send "channel-remove" with data = "string"
+OR
+send "error" with date = "string"
+
+________________________________________
+"disconnect" => auto
+disconnect from DB
+

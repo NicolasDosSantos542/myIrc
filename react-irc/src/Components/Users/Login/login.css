@@ -1,0 +1,25 @@
+.inputError {
+    border-color: #f13737;
+}
+.input_color {
+    background-color: #2f2f40;
+    color: white;
+}
+.input_color:focus {
+    background-color: #2f2f40;
+    color: white;
+}
+.input_submit:hover {
+    color: white;
+}
+.input_submit {
+    background-color: #7647a5;
+    color: white;
+}
+.input_register {
+    background-color: #ff994f;
+    color: white;
+}
+.input_register:hover {
+    color: white;
+}

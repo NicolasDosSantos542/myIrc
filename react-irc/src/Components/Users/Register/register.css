@@ -1,0 +1,26 @@
+.errorMessage {
+    color: red;
+    font-size: 12px;
+    position: absolute;
+}
+.inputError {
+    border-color: red;
+}
+.inputValid {
+    border-color: limegreen;
+}
+.input_submit {
+    background-color: #7647a5;
+    color: white;
+}
+.input_submit:hover {
+    color: white;
+}
+.input_color {
+    background-color: #143939;
+    color: white;
+}
+.input_color:focus {
+    background-color: #143939;
+    color: white;
+}

@@ -1,0 +1,26 @@
+body {
+    background-image: url("http://localhost:3000/assets/acceuil.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh
+}
+.acceuil_container {
+    background-color: #17162f;
+    height: 100vh;
+    color: white;
+}
+.dircord {
+    font-family: 'Bungee', cursive;
+    font-size: 50px;
+    margin: 0px;
+}
+.slogan {
+    font-size: 15px;
+    padding: 0px;
+    margin: 0px;
+}
+@media (max-width: 1240px) {
+    body {
+        background-size: cover;
+    }
+}

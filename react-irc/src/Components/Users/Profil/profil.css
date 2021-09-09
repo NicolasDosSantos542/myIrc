@@ -1,0 +1,60 @@
+.profil_main {
+    background-color: #17162f;
+}
+
+.profil_title {
+    font-family: 'Bungee', cursive;
+    color: white;
+}
+
+.profil_input_submit {
+    background-color: #7647a5;
+    color: white;
+}
+.profil_input_submit:hover {
+    background-color: #7647a5;
+    color: white;
+}
+
+.profil_input_color {
+    background-color: #2f2f40;
+    color: white;
+}
+
+.profil_input_color:focus {
+    background-color: #2f2f40;
+    color: white;
+}
+.profil_button_delete {
+    background-color: #cc4971;
+    color: white;
+}
+.profil_button_delete:hover {
+    background-color: #cc4971;
+    color: white;
+}
+.profil_button_denied {
+    background-color: #ff994f;
+    color: white;
+}
+.profil_button_denied:hover {
+    background-color: #ff994f;
+    color: white;
+}
+
+.profil_gradient, .home_gradient {
+    width: 1%;
+    background: linear-gradient(to left,
+    #17162f,
+    rgba(23, 22, 47, 0.95),
+    rgba(23, 22, 47, 0.85),
+    rgba(23, 22, 47, 0.75),
+    rgba(23, 22, 47, 0.65),
+    rgba(23, 22, 47, 0.55),
+    rgba(23, 22, 47, 0.45),
+    rgba(23, 22, 47, 0.35),
+    rgba(23, 22, 47, 0.22),
+    rgba(23, 22, 47, 0.15),
+    rgba(23, 22, 47, 0.10),
+    rgba(23, 22, 47, 0));
+}

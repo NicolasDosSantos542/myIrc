@@ -1,0 +1,145 @@
+/** {*/
+/*    font-family: 'Baloo Tammudu 2', cursive;*/
+/*}*/
+.container_main {
+    background-color: #17162f;
+    height: 100vh
+}
+
+.messagerieMain {
+    background-color: #323245;
+    height: 93vh;
+    overflow: auto;
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
+}
+
+.footer {
+    height: 7vh;
+}
+
+::-webkit-scrollbar {
+    display: none; /* Chrome Safari */
+}
+
+.messagerieAuteur {
+    color: #ff994f;
+}
+.messagerieAutre {
+    color: #7647a5;
+}
+.dircord_main {
+    font-family: 'Bungee', cursive;
+    font-size: 35px !important;
+    margin: 0px;
+    color: white;
+}
+
+.title {
+    font-family: 'Bungee', cursive;
+    color: white;
+}
+
+.input_send {
+    background-color: #ff994f;
+    color: white;
+}
+
+.input_color {
+    background-color: #2f2f40;
+    color: white;
+}
+
+.input_color:focus {
+    background-color: #2f2f40;
+    color: white;
+}
+
+.incomming {
+    border: 1px solid white;
+}
+
+.test {
+    color: white;
+    margin-top: auto;
+}
+
+@media (max-width: 1199px) {
+    .messagerieMain {
+        height: 90vh;
+    }
+}
+
+.navbar_responsive {
+    border-bottom: 1px solid grey;
+}
+
+.classTest {
+    display: block !important;
+    position: absolute !important;
+    background-color: #17162f !important;
+    height: 91vh;
+    width: 25vw;
+    border-right: 1px solid grey;
+    z-index: 100;
+}
+@media (max-width: 900px) {
+    .classTest {
+        width: 35vw;
+    }
+}
+@media (max-width: 570px) {
+    .classTest {
+        width: 45vw;
+    }
+}
+@media (max-width: 450px) {
+    .classTest {
+        width: 50vw;
+    }
+}
+.img_liste {
+    width: 40px
+}
+.chat_list_channel {
+    color: white;
+}
+.chat_user {
+    font-family: 'Bungee', cursive;
+}
+.lgn_bottom {
+    margin-top: auto;
+    bottom: 0;
+}
+.img_join {
+    width: 45px;
+}
+
+.modal_style {
+    background-color: #252342;
+    color: white;
+}
+.modal_style input {
+    background-color: #2f2f40;
+    color: white;
+}
+.modal_style input:focus {
+    background-color: #2f2f40;
+    color: white;
+}
+.modal-header {
+    border: none !important;
+}
+.modal-footer {
+    border: none !important;
+}
+.message_border {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.15);
+}
+.messagerieMain {
+    z-index: 2;
+}
+#buttonParameter {
+    z-index: 0!important;
+}

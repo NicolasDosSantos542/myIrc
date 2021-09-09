@@ -1,0 +1,49 @@
+socket Server receive:
+
+**"connection" =>auto
+nothing particular
+_________________________
+
+**"join-channel" =>
+ receive data = {
+token: "token",
+channel: "channel name"
+}
+join channel in socket && DB /
+
+send to front :
+
+-"res-join" with  data = API JSON
+
+- "user-join-your-channel" with data = user name
+
+________________________________
+
+**"new-message" =>
+receive data={
+token: "token",
+name: "channel name",
+message : "message"
+}
+put message in db
+send data = { message: "message", nickName: "user name"} if success
+else send "error" with data = API error JSON
+
+"create-channel"=>
+receive data = {name: "channel"}
+
+_________________________________
+
+**"list" =>
+
+receive no data
+emit('list') with data = [{ name: "channel 1"}, {name: "channel2},  (..)]
+
+____________________________________________________
+
+
+
+_________________________________________
+"disconnect" => auto
+disconnect from DB
+
